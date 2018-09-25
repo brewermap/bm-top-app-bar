@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "name": "bm-top-app-bar",
+  "description": "Top app bar for Brewer Map Components",
+  "main": "bm-top-app-bar.js",
+  "keywords": [
+    "lit-element",
+    "polymer3",
+    "customElements"
+  ],
+  "devDependencies": {
+    "wct-browser-legacy": "^1.0.1",
+    "web-component-tester": "^6.7.1",
+    "wct-headless": "^2.2.2"
+  },
+  "dependencies": {
+    "@material/mwc-icon": "^0.2.1",
+    "@material/top-app-bar": "^0.40.0",
+    "@polymer/lit-element": "^0.6.0",
+    "@webcomponents/webcomponentsjs": "^2.0.2",
+    "lit-html": "^0.11.4"
+  },
+  "scripts": {
+    "test": "wct --npm",
+    "start": "polymer serve --npm --open",
+    "lint": "polymer lint",
+    "reset": "rm -rf node_modules"
+  }
+}

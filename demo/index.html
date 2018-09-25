@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>Material Web Components Catalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <demo-view></demo-view>
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script type="module">
+
+		import {LitElement, html} from '@polymer/lit-element/';
+    import {BMTopAppBar} from '../bm-top-app-bar.js';
+    import {Icon} from "@material/mwc-icon";
+
+    class DemoView extends LitElement {
+      render() {
+        return html`
+          <bm-top-app-bar title="BM ABV Calculator" menu>
+            <a href="#" class="mdc-top-app-bar__action-item" aria-label="Download" alt="Download"><mwc-icon>file_download</mwc-icon></a>
+            <a href="#" class="mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page"><mwc-icon>print</mwc-icon></a>
+            <a href="#" class="mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page"><mwc-icon>bookmark</mwc-icon></a>  
+          </bm-top-app-bar>
+        `;
+      }
+    }
+
+    customElements.define('demo-view', DemoView);
+  </script>
+</body>
+</html>
